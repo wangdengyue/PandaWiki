@@ -270,29 +270,7 @@ const Chat = () => {
             handleSearchAbort={handleSearchAbort}
           />
         </Box>
-        <Box
-          sx={{
-            flexShrink: 0,
-            width: 388,
-            border: '1px solid',
-            borderColor: 'divider',
-            borderRadius: '10px',
-            p: 3,
-            bgcolor: 'background.paper',
-          }}
-        >
-          <Box
-            sx={{
-              fontSize: '20px',
-              fontWeight: '700',
-              lineHeight: '28px',
-              mb: 2,
-            }}
-          >
-            搜索结果
-          </Box>
-          <SearchResult list={chunkResult} loading={chunkLoading} />
-        </Box>
+    
       </Stack>
     </Box>
   );

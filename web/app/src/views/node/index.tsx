@@ -144,7 +144,6 @@ const Doc = ({
       <Box sx={{ mt: '60px', position: 'relative', zIndex: 1 }}>
         <Box sx={{ minHeight: `calc(100vh - ${footerHeight + 1}px - 100px)` }}>
           <Header />
-          {nodeList && <CatalogH5 nodes={nodeList} />}
           <Box sx={{ height: 24 }} />
           {node ? (
             <DocContent
@@ -221,7 +220,6 @@ const Doc = ({
         bgcolor: 'background.default',
       }}
     >
-      <Catalog id={docId} setId={setDocId} />
       <Header />
       {node ? (
         <>

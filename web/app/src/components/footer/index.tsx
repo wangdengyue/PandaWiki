@@ -120,35 +120,7 @@ const Footer = ({
             {footerSetting?.icp}
           </Box>
         )}
-        <Stack
-          direction={'row'}
-          alignItems={'center'}
-          gap={0.5}
-          sx={{ height: 40, lineHeight: '40px' }}
-        >
-          本网站由
-          <Link
-            href={'https://pandawiki.docs.baizhi.cloud/'}
-            target='_blank'
-            prefetch={false}
-          >
-            <Stack
-              direction={'row'}
-              alignItems={'center'}
-              gap={0.5}
-              sx={{
-                cursor: 'pointer',
-                '&:hover': {
-                  color: 'primary.main',
-                },
-              }}
-            >
-              <Image src={logo.src} alt='PandaWiki' width={16} height={16} />
-              <Box sx={{ fontWeight: 'bold' }}>PandaWiki</Box>
-            </Stack>
-          </Link>
-          提供技术支持
-        </Stack>
+    
       </Box>
     );
 
@@ -286,35 +258,7 @@ const Footer = ({
               </Link>
             )}
           </Stack>
-          <Stack
-            direction={'row'}
-            alignItems={'center'}
-            gap={0.5}
-            sx={{ color: 'text.secondary' }}
-          >
-            本网站由
-            <Link
-              href={'https://pandawiki.docs.baizhi.cloud/'}
-              prefetch={false}
-              target='_blank'
-            >
-              <Stack
-                direction={'row'}
-                alignItems={'center'}
-                gap={0.5}
-                sx={{
-                  cursor: 'pointer',
-                  '&:hover': {
-                    color: 'primary.main',
-                  },
-                }}
-              >
-                <Image src={logo.src} alt='PandaWiki' width={16} height={16} />
-                <Box sx={{ fontWeight: 'bold' }}>PandaWiki</Box>
-              </Stack>
-            </Link>
-            提供技术支持
-          </Stack>
+        
         </Stack>
       </Box>
     </Box>

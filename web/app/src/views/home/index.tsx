@@ -7,7 +7,6 @@ import { useStore } from '@/provider';
 import { Box, TextField } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import CatalogH5 from '../node/CatalogH5';
 import NodeList from './NodeList';
 import QuestionList from './QuestionList';
 
@@ -101,7 +100,6 @@ const Home = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {nodeList && mobile && <CatalogH5 nodes={nodeList} />}
         <Box
           sx={{
             maxWidth: '1200px',
